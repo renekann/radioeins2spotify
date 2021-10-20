@@ -150,6 +150,7 @@ def already_in_playlist(track, playlistTracks):
 
 def add_track_to_playlist(track, playlistId):
     result = spotify.playlist_add_items(playlist_id=playlistId, items=[track.spotifyId])
+    send_slack_message(f"{track} added to {playlistId}", channel="radio2spotify-app-prod-log")
     logger.debug(result)
 
 class Error(Exception):
