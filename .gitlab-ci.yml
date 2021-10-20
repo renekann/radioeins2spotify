@@ -1,0 +1,15 @@
+stages:
+  - deploy
+
+production:
+  only:
+    - master
+  stage: deploy
+  image: python:3.8
+  before_script:
+    - pip3 install awscli --upgrade
+    - pip3 install aws-sam-cli --upgrade
+  script:
+    - sam build
+    - sam deploy --config-env prod --resolve-s3 --no-fail-on-empty-changeset
+  environment: production

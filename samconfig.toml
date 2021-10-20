@@ -1,0 +1,30 @@
+version = 0.1
+
+[dev]
+
+[dev.package.parameters]
+region = "eu-central-1"
+
+[dev.deploy.parameters]
+stack_name = "radio2spotify-dev"
+s3_prefix = "radio2spotify-dev"
+region = "eu-central-1"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Stage=dev SlackChannel=radio2spotify-app-dev PlaylistDebugPrefix=DEV "
+image_repositories = []
+
+
+[prod]
+
+[prod.package.parameters]
+region = "eu-central-1"
+
+[prod.deploy.parameters]
+stack_name = "radio2spotify-prod"
+s3_prefix = "radio2spotify-prod"
+region = "eu-central-1"
+confirm_changeset = false
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "Stage=prod SlackChannel=radio2spotify-app-prod"
+

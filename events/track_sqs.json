@@ -1,0 +1,23 @@
+{
+  "Records": [
+    {
+      "messageId": "a13262c3-8022-44fc-844d-d619a7713999",
+      "receiptHandle": "AQEBKl94FjsXjk1jXB2C9uo5af0OhsRIf4x53bPX4ZxhL3tY7Hz5VYv00+n0JVPCM509U+LQUim//WAddRQhJ5QbpGNgyLpvI4hsMzsFROJKPe82kN/S5Cpn/2dMrrOdNi6xNZiUGvz0CFva4u8EpqKK3Q7MUt4rs3zQ3bMXzuygXXNa7yWQ+vYbEc3i4aarV2UqKzckhDjZLEimkQdHoXBRxPm3bIUn1SC8qYbtIPBhtfeBtdMaTe0IZ+LDSvjVWSYzmAb0yFkmOmNmPeGAwYhvvxCc+K1T6196wrdGRNAh5Vc=",
+      "body": "{\"artist\": \"Django Django\", \"title\": \"Headrush\", \"playtime\": 1634280595, \"hash\": \"a52eed86683efac4d947160222e0fc007d774d96\", \"spotifyId\": \"\"}",
+      "attributes": {
+        "ApproximateReceiveCount": "1",
+        "SentTimestamp": "1634283216718",
+        "SequenceNumber": "18865120577189359872",
+        "MessageGroupId": "NewTrack",
+        "SenderId": "AROAZZTRMJW6VP7IWNMXP:radio2spotify-dev-PullTracksFunction-5aTVJIvqPlxj",
+        "MessageDeduplicationId": "711b546fcd3f35b5c3f1c41297e8aa79d3933c233a54d134a496334fb94d15cf",
+        "ApproximateFirstReceiveTimestamp": "1634283218086"
+      },
+      "messageAttributes": {},
+      "md5OfBody": "ea7e3c8ca15ba6c6b7f7635a18d3522a",
+      "eventSource": "aws:sqs",
+      "eventSourceARN": "arn:aws:sqs:eu-central-1:673473908157:dev-new-tracks.fifo",
+      "awsRegion": "eu-central-1"
+    }
+  ]
+}
