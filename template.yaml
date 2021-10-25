@@ -81,7 +81,7 @@ Resources:
         Timer:
           Type: Schedule
           Properties:
-            Schedule: cron(15 10 * * ? *)
+            Schedule: cron(10 2 * * ? *)
   StoreTracksInSpotify:
     Type: AWS::Serverless::Function
     Properties:
