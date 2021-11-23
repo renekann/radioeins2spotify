@@ -55,7 +55,7 @@ Resources:
         Timer:
           Type: Schedule
           Properties:
-            Schedule: rate(10 minutes)
+            Schedule: rate(15 minutes)
   PullOlderTracksFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
@@ -128,7 +128,7 @@ Resources:
         Timer:
           Type: Schedule
           Properties:
-            Schedule: rate(17 minutes)
+            Schedule: rate(27 minutes)
   TracksTable:
     Type: AWS::DynamoDB::Table
     Properties:
