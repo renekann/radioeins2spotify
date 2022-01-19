@@ -70,14 +70,15 @@ def is_new_track(track):
     return False
 
 def search_for_spotify_id(track):
-    result = spotify.search(q=track.searchString(), limit=1)
+    search_string = track.searchString()
+    result = spotify.search(q=search_string, limit=1)
 
     if "tracks" in result and len(result["tracks"]["items"]) > 0:
         track.spotifyId = result["tracks"]["items"][0]["id"]
         logger.debug(f"Found spotifyId for {track}: {track.spotifyId}")
         return track
     else:
-        logger.warning(f"Could not find spotifyId for: {track}")
+        logger.info(f"Could not find spotifyId for: {track} with search string: {search_string}")
         return None
 
 
