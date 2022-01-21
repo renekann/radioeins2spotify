@@ -32,13 +32,30 @@ class Track:
         return f"Artist: {self.artist} - {self.title} (playtime: {self.playtime}, spotifyId: {self.spotifyId}, hash: {self.hash})"
 
     def searchString(self):
-        cleanupWords = [" x ", "feat.", "feat", "Ft.", "&"]
-        cleanupWordsInParentheses = ["Edit", "Radio", "Single", "Radio Edit", "Radio-Edit", "Live", "(", ")"]
+        cleanupWords = [" x ",
+                        "feat.",
+                        "feat",
+                        "Ft.",
+                        "&",
+                        "'",
+                        "Edit",
+                        "Radio",
+                        "Single",
+                        "Radio Edit",
+                        "Radio-Edit",
+                        "Radioedit",
+                        "Live",
+                        "(",
+                        ")",
+                        "?",
+                        "!",
+                        " - ",
+                        " -",
+                        "&",
+                        "Konzertmitschnitt",
+                        "Popsplits"]
 
-        cleanedTitle = remove_words_from_string(self.title, cleanupWords)
-        cleanedTitle = remove_words_from_string(cleanedTitle, cleanupWordsInParentheses)
-
-        cleanedArtist = remove_words_from_string(self.artist, cleanupWords)
-        cleanedArtist = remove_words_from_string(cleanedArtist, cleanupWordsInParentheses)
+        cleanedTitle = remove_words_from_string(self.title, cleanupWords).strip()
+        cleanedArtist = remove_words_from_string(self.artist, cleanupWords).strip()
 
         return "track:" + cleanedTitle + " artist:" + cleanedArtist

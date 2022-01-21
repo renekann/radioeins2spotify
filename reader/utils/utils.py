@@ -1,11 +1,14 @@
 import os
+import re
 
+def remove_words_from_string(value, stopwords, replace=""):
+    replaced_value = value
+    for word in stopwords:
+        replaced_value = replaced_value.replace(word, replace)
 
-def remove_words_from_string(query, stopwords, separator=" "):
-    querywords = query.split(separator)
+    replaced_value = re.sub("\s\s+", " ", replaced_value)
 
-    resultwords = [word for word in querywords if word.lower() not in stopwords]
-    return separator.join(resultwords)
+    return replaced_value
 
 def isDevStage():
     if os.environ.get('STAGE'):
