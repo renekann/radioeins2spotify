@@ -29,7 +29,7 @@ class Track:
         return json.dumps({"artist": self.artist, "title": self.title, "playtime": self.playtime, "hash": self.hash,
                            "spotifyId": self.spotifyId})
     def __repr__(self):
-        return f"Artist: {self.artist} - {self.title}"
+        return f"Artist: {self.artist} - {self.title} (playtime: {self.playtime}, spotifyId: {self.spotifyId}, hash: {self.hash})"
 
     def searchString(self):
         cleanupWords = [" x ", "feat.", "feat", "Ft.", "&"]

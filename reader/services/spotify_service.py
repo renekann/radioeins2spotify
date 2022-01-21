@@ -57,14 +57,18 @@ def is_new_track(track):
     existing_track = search(track)
 
     if(existing_track == None):
+        logger.info(f"[DOES NOT EXIST] create {track}")
         create(track)
         return True
     else:
         plays = existing_track["plays"]
 
+        logger.info(f"[PLAYS] For {track}")
+
         if (track.playtime not in plays):
             update_playtime_for_track(track.hash, track.playtime)
             track.spotifyId = existing_track["spotifyId"]
+            logger.info(f"[NOT IN PLAYS] {track} with {track.playtime}")
             return True
 
     return False
