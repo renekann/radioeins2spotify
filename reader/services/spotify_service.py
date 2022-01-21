@@ -63,7 +63,7 @@ def is_new_track(track):
     else:
         plays = existing_track["plays"]
 
-        logger.info(f"[PLAYS] For {track}")
+        logger.info(f"[PLAYS] {plays} for {track}")
 
         if (track.playtime not in plays):
             update_playtime_for_track(track.hash, track.playtime)
