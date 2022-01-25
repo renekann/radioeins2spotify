@@ -35,3 +35,4 @@ def refresh_token():
     update_secret("spotifyRefreshToken", token_info["refresh_token"])
     update_secret("spotifyAccessToken", token_info["access_token"])
     update_secret("spotifyTokenExpiresAt", token_info["expires_at"])
+    logger.info(f"Token refreshed!")

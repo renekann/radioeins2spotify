@@ -36,7 +36,6 @@ class Track:
                         "feat.",
                         "feat",
                         "Ft.",
-                        "&",
                         "'",
                         "Edit",
                         "Radio",
@@ -49,9 +48,11 @@ class Track:
                         ")",
                         "?",
                         "!",
+                        ",",
                         " - ",
                         " -",
                         "&",
+                        ".",
                         "Konzertmitschnitt",
                         "Popsplits"]
 
