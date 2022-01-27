@@ -14,6 +14,7 @@ slackClient = WebClient(token=slackBotToken)
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+
 def send_slack_message(message, channel=slackChannel):
     try:
         response = slackClient.chat_postMessage(channel=channel, text=message)

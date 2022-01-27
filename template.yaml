@@ -140,12 +140,25 @@ Resources:
         - AttributeName: id
           KeyType: HASH
       ProvisionedThroughput:
-        ReadCapacityUnits: 3
-        WriteCapacityUnits: 3
+        ReadCapacityUnits: 2
+        WriteCapacityUnits: 2
   PlaylistsTable:
     Type: AWS::DynamoDB::Table
     Properties:
       TableName: !Sub "${Stage}-playlists"
+      AttributeDefinitions:
+        - AttributeName: id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: id
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+  TracksInPlaylistsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub "${Stage}-playlist-tracks"
       AttributeDefinitions:
         - AttributeName: id
           AttributeType: S

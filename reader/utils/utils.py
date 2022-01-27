@@ -1,6 +1,7 @@
 import os
 import re
 
+
 def remove_words_from_string(value, stopwords, replace=""):
     replaced_value = value
     for word in stopwords:
@@ -9,6 +10,7 @@ def remove_words_from_string(value, stopwords, replace=""):
     replaced_value = re.sub("\s\s+", " ", replaced_value)
 
     return replaced_value
+
 
 def isDevStage():
     if os.environ.get('STAGE'):

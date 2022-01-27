@@ -5,6 +5,7 @@ secret_name = "radio2spotify"
 region_name = "eu-central-1"
 secrets_client = boto3.client("secretsmanager")
 
+
 def get_secret(name):
     response = secrets_client.get_secret_value(SecretId=secret_name)
     secret = json.loads(response.get('SecretString')).get(name)
