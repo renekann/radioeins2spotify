@@ -13,7 +13,7 @@ def load(key):
     bucket = os.environ["BUCKET_NAME"]
     try:
         response = s3.get_object(bucket, key)
-        # Read data from response.
+        return response
     finally:
         response.close()
         response.release_conn()
