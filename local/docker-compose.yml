@@ -1,14 +1,26 @@
 version: '3.8'
 services:
-  dynamodb-local:
-    command: "-jar DynamoDBLocal.jar -sharedDb -optimizeDbBeforeStartup -dbPath ./data"
-    image: "amazon/dynamodb-local:latest"
-    container_name: dynamodb-local
+#  dynamodb-local:
+#    command: "-jar DynamoDBLocal.jar -sharedDb -optimizeDbBeforeStartup -dbPath ./data"
+#    image: "amazon/dynamodb-local:latest"
+#    container_name: dynamodb-local
+#    ports:
+#      - "8000:8000"
+#    volumes:
+#      - "./docker/dynamodb:/home/dynamodblocal/data"
+#    working_dir: /home/dynamodblocal
+#    networks:
+#      - dynamodb
+
+  minio:
+    image: minio/minio
+    command: server --console-address :9001 /data
     ports:
-      - "8000:8000"
-    volumes:
-      - "./docker/dynamodb:/home/dynamodblocal/data"
-    working_dir: /home/dynamodblocal
+      - 9000:9000
+      - 9001:9001
+    environment:
+      MINIO_ROOT_USER: test
+      MINIO_ROOT_PASSWORD: testtest
     networks:
       - dynamodb
 

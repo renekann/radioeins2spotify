@@ -20,7 +20,7 @@ def handler(event, context):
 
         tracks.sort(key=lambda x: x.playtime, reverse=False)
 
-        old_tracks = [Track(**d) for d in load('pulled_tracks.json')]
+        old_tracks = [Track(**d) for d in json.loads(load('pulled_tracks.json'))]
         unique_new_tracks = filter_for_new_tracks(tracks, old_tracks)
         store_pulled_tracks(tracks, name='pulled_tracks.json')
 
@@ -52,7 +52,7 @@ def handlerOlderTracks(event, context):
 
         tracks.sort(key=lambda x: x.playtime, reverse=False)
 
-        old_tracks = [Track(**d) for d in load('older_pulled_tracks.json')]
+        old_tracks = [Track(**d) for d in json.loads(load('older_pulled_tracks.json'))]
         unique_new_tracks = filter_for_new_tracks(tracks, old_tracks)
         store_pulled_tracks(tracks, name='older_pulled_tracks.json')
 
