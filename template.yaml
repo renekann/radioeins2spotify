@@ -29,6 +29,7 @@ Globals:
         PLAYLIST_PREFIX: !Sub "${PlaylistDebugPrefix}radioeins.de (unofficial) - live playlist!"
         STAGE: !Sub "${Stage}"
         SLACK_CHANNEL: !Ref SlackChannel
+        BUCKET_NAME: !Sub "${Stage}-radio2spotify-data"
 Resources:
   PullTracksFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
@@ -51,6 +52,8 @@ Resources:
             - Effect: Allow
               Action: secretsmanager:*
               Resource: arn:aws:secretsmanager:*:*:*
+        - S3FullAccessPolicy:
+            BucketName: !Ref PulledTracksBucket
       Events:
         Timer:
           Type: Schedule
@@ -77,6 +80,8 @@ Resources:
             - Effect: Allow
               Action: secretsmanager:*
               Resource: arn:aws:secretsmanager:*:*:*
+        - S3FullAccessPolicy:
+            BucketName: !Ref PulledTracksBucket
       Events:
         Timer:
           Type: Schedule
@@ -204,3 +209,7 @@ Resources:
         - Ref: AlarmTopic
       OKActions:
         - Ref: AlarmTopic
+  PulledTracksBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "${Stage}-radio2spotify-data"

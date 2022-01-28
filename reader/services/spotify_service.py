@@ -5,8 +5,8 @@ import boto3
 import os
 
 from services.playlist_service import get_current_playlist, create_playlist, delete_current_playlist
-from utils.slack import send_slack_message
-from utils.spotify_client import spotify, spotify_playlist_name_prefix
+from helper.slack import send_slack_message
+from helper.spotify_client import spotify, spotify_playlist_name_prefix
 from services.tracks_service import update_spotifyid_for_track, search, create, update_playtime_for_track
 
 logger = logging.getLogger()

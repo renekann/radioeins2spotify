@@ -4,7 +4,7 @@ import os
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
-from utils.secret_utils import get_secret
+from helper.secret_utils import get_secret
 
 slackBotToken = get_secret("slackBotToken")
 slackChannel = os.environ['SLACK_CHANNEL']

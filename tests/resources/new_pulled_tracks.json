@@ -1,0 +1,887 @@
+[
+  {
+  "playtime": 1643256239,
+  "artist": "Jake Bug",
+  "title": "Its new",
+  "hash": "354rth45uertutuue",
+  "spotifyId": ""
+},
+  {
+  "playtime": 1643256239,
+  "artist": "Sam Fender",
+  "title": "Aye",
+  "hash": "c1fe41f603c3ec7f51f38615c2b76a363e903a3a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643256447,
+  "artist": "Fugees",
+  "title": "Ready Or Not",
+  "hash": "fe1a3debbc2a108b83acba933d301d6e93b1da62",
+  "spotifyId": ""
+}, {
+  "playtime": 1643256891,
+  "artist": "Joesef",
+  "title": "Fire",
+  "hash": "3bb9a34bea1ace97e3b998b1a63daeead8fc87fd",
+  "spotifyId": ""
+},
+  {
+  "playtime": 1643256239,
+  "artist": "John Doe",
+  "title": "Its also new",
+  "hash": "rtj645jerrjrzt",
+  "spotifyId": ""
+},
+  {
+  "playtime": 1643257173,
+  "artist": "Maximo Park",
+  "title": "Books From Boxes",
+  "hash": "133c8aa57a0abfa7c6ae9b446d29ce1be7591db8",
+  "spotifyId": ""
+}, {
+  "playtime": 1643257503,
+  "artist": "Diplo feat. Elderbrook & Andhim",
+  "title": "One By One (Sofia Kourtesis Remix)",
+  "hash": "041018a862b2a059707dce1f6dca9bf9e4508450",
+  "spotifyId": ""
+}, {
+  "playtime": 1643257665,
+  "artist": "Blondie",
+  "title": "Heart Of Glass",
+  "hash": "46e6d0678f1062284c61b95e8c4914c86d2ebcb1",
+  "spotifyId": ""
+}, {
+  "playtime": 1643258002,
+  "artist": "Coldplay",
+  "title": "Viva la vida",
+  "hash": "f3f116dd6eb620bbf259b39fb31554be992692f5",
+  "spotifyId": ""
+}, {
+  "playtime": 1643258438,
+  "artist": "Jean-Pierre Kusela",
+  "title": "Naurava Kulkuri (Der lachende Vagabund)",
+  "hash": "e0f6e54d26e697b0e848209a063264b6212058dd",
+  "spotifyId": ""
+}, {
+  "playtime": 1643258710,
+  "artist": "Courtney Barnett",
+  "title": "Write A List Of Things To Look Forward To",
+  "hash": "085d76ab27214ac26841c44cd6bdbdb5ac1d5832",
+  "spotifyId": ""
+}, {
+  "playtime": 1643258872,
+  "artist": "U2",
+  "title": "Walk On",
+  "hash": "41df479923187486721d2f5725a23000be31d03c",
+  "spotifyId": ""
+}, {
+  "playtime": 1643259266,
+  "artist": "I LIKE TRAINS",
+  "title": "Dig In",
+  "hash": "29bc6303a79f7f9607f7a912e95b31413fa3414a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643259499,
+  "artist": "Green Day",
+  "title": "Holy Toledo!",
+  "hash": "41b544e0369ab7929a1f6d8d2cb8ea3e971abdf7",
+  "spotifyId": ""
+}, {
+  "playtime": 1643259990,
+  "artist": "The Magic Numbers",
+  "title": "Take A Chance",
+  "hash": "58a8805e1654568ac2f0340b44678ee06a78085e",
+  "spotifyId": ""
+}, {
+  "playtime": 1643260407,
+  "artist": "Still Corners",
+  "title": "Heavy Days",
+  "hash": "6f1ce770c19acc98107119bbd2633ff0d4d124a4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643260679,
+  "artist": "de la soul",
+  "title": "Ring Ring Ring (Ha Ha Hey)",
+  "hash": "3fce3b38670292822ee209a6959d111d247d171a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643261127,
+  "artist": "Celeste",
+  "title": "I can see the change",
+  "hash": "07ffa55c11707140eab73af315f1b5fcbc7ff5ed",
+  "spotifyId": ""
+}, {
+  "playtime": 1643261740,
+  "artist": "Spoon",
+  "title": "Wild",
+  "hash": "2117953767fb1657cd4f4c21adcb9ee1b86ce23a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643262244,
+  "artist": "Gossip",
+  "title": "Get A Job",
+  "hash": "06866040dac00eafcdb0815b9653d25c0cd34cad",
+  "spotifyId": ""
+}, {
+  "playtime": 1643262681,
+  "artist": "Lightning Seeds",
+  "title": "Pure",
+  "hash": "13a2a406c4c4884da21ec3dcb6bd35bb186df97e",
+  "spotifyId": ""
+}, {
+  "playtime": 1643263049,
+  "artist": "The Rapture",
+  "title": "Sail Away",
+  "hash": "e60e3ea83a121090a3b260105bf71e8a8a1f2763",
+  "spotifyId": ""
+}, {
+  "playtime": 1643263562,
+  "artist": "Tame Imapala",
+  "title": "No Choice",
+  "hash": "7a7d43cad1951da6274d8620334c61b9b60455f5",
+  "spotifyId": ""
+}, {
+  "playtime": 1643264410,
+  "artist": "Edie Brickell & New Bohemians",
+  "title": "What I Am",
+  "hash": "c49eb143746596a1f73bf6eede673b25043375cc",
+  "spotifyId": ""
+}, {
+  "playtime": 1643264798,
+  "artist": "Bronson feat. Lau.ra",
+  "title": "Heart attack",
+  "hash": "0f78ea740e4375d2319f6fd571f19e837264cbbb",
+  "spotifyId": ""
+}, {
+  "playtime": 1643265238,
+  "artist": "Placebo",
+  "title": "Beautiful James",
+  "hash": "0d9a443882827f3e1f3e8ff5fc36892f16e5be00",
+  "spotifyId": ""
+}, {
+  "playtime": 1643265778,
+  "artist": "Lizzo",
+  "title": "Juice",
+  "hash": "c67a71f5ef16e9ba10c84d9d79697e052251c785",
+  "spotifyId": ""
+}, {
+  "playtime": 1643266150,
+  "artist": "The Church",
+  "title": "Under The Milky Way",
+  "hash": "3a07876284d67188ad96a49cc9bf182955886e54",
+  "spotifyId": ""
+}, {
+  "playtime": 1643266600,
+  "artist": "Khruangbin & Leon Bridges",
+  "title": "B-Side",
+  "hash": "cb49e670536f59130cada98930aebc511c634f73",
+  "spotifyId": ""
+}, {
+  "playtime": 1643267133,
+  "artist": "Pearl Jam",
+  "title": "The Fixer",
+  "hash": "2821ccf18f56de4ba720e38aef0792c337a0b836",
+  "spotifyId": ""
+}, {
+  "playtime": 1643267610,
+  "artist": "Madrugada",
+  "title": "Dreams at midnight",
+  "hash": "60e2365dd25d98a121636cfc5c81a57a40c9bbb4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643267904,
+  "artist": "Gus Gus",
+  "title": "Ladyshave",
+  "hash": "cad2dd9bf80d451fddcbc11695b470d7aea759f4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643268351,
+  "artist": "Wanda",
+  "title": "Jurassic Park",
+  "hash": "e09590f8775009ea9e6eac61708a49e2fbbae344",
+  "spotifyId": ""
+}, {
+  "playtime": 1643268879,
+  "artist": "The Boxer Rebellion",
+  "title": "Weapon",
+  "hash": "6c6755847cea95ff7a12a3d23f5bab753a516335",
+  "spotifyId": ""
+}, {
+  "playtime": 1643269410,
+  "artist": "Boy Harsher",
+  "title": "Give Me a Reason",
+  "hash": "bb8419785c4470093235159aba45ce0c02503d82",
+  "spotifyId": ""
+}, {
+  "playtime": 1643269611,
+  "artist": "The Cult",
+  "title": "Rain",
+  "hash": "3df971f8feafdfb8e2e59860617e5db9102b3d08",
+  "spotifyId": ""
+}, {
+  "playtime": 1643269933,
+  "artist": "Jungle",
+  "title": "All of the time",
+  "hash": "aa2f62187188d472f35da1f2efca3654e73b32ba",
+  "spotifyId": ""
+}, {
+  "playtime": 1643270260,
+  "artist": "The Killers",
+  "title": "Change Your Mind",
+  "hash": "3871e59dcfb474ac330708cffa4259865a7d8638",
+  "spotifyId": ""
+}, {
+  "playtime": 1643270788,
+  "artist": "My Morning Jacket",
+  "title": "Penny For Your Thoughts",
+  "hash": "3d75a3a4e95c556eac289361060487fa13279452",
+  "spotifyId": ""
+}, {
+  "playtime": 1643271350,
+  "artist": "R\u00f6yksopp",
+  "title": "The Girl And The Robot",
+  "hash": "c1dfc73b8d20527e63ff4155ac1269f696f90219",
+  "spotifyId": ""
+}, {
+  "playtime": 1643271588,
+  "artist": "Nick Cave & The Bad Seeds",
+  "title": "The Weeping Song",
+  "hash": "63bafaca251bb984b0a70a59d26bc676cdf8147a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643271961,
+  "artist": "Pom Pom Squad feat. Matthew Caws",
+  "title": "Popular",
+  "hash": "b6998ccf8ca7fb60289d68e69ab925119a06265b",
+  "spotifyId": ""
+}, {
+  "playtime": 1643272459,
+  "artist": "AA Sessions",
+  "title": "Please Please",
+  "hash": "04b4e9d437b070239ad7722192e898b8cd04ee7f",
+  "spotifyId": ""
+}, {
+  "playtime": 1643272934,
+  "artist": "Efterklang",
+  "title": "Dragonfly",
+  "hash": "b22eb1c837659019fa8e6a285bf896f40576e24f",
+  "spotifyId": ""
+}, {
+  "playtime": 1643273099,
+  "artist": "Sheila E. / Prince",
+  "title": "A love bizarre",
+  "hash": "4d6260a311f07153429cc9c3b2fd7fec8bfb98a4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643273344,
+  "artist": "Bad Stream",
+  "title": "Already Dark",
+  "hash": "a3ece2e8e014252269881bdd40a7bb39d266f071",
+  "spotifyId": ""
+}, {
+  "playtime": 1643273782,
+  "artist": "Stereophonics",
+  "title": "Do Ya Feel My Love? (Radio Edit)",
+  "hash": "295d027bbf163ea7ca4527aa918594d93a3382fd",
+  "spotifyId": ""
+}, {
+  "playtime": 1643274312,
+  "artist": "Arcade Fire",
+  "title": "Ready To Start",
+  "hash": "2d862d2d1d0f64b868687a67b63d18cb748e8514",
+  "spotifyId": ""
+}, {
+  "playtime": 1643274565,
+  "artist": "Bonobo",
+  "title": "Rosewood (Radio Edit)",
+  "hash": "ed422db237a5199d45b900848f840d0a75099beb",
+  "spotifyId": ""
+}, {
+  "playtime": 1643275111,
+  "artist": "The Jesus & Mary Chain",
+  "title": "Sidewalking",
+  "hash": "5c284ad6c87a6fa06ee12c7f118a06a0d2b60635",
+  "spotifyId": ""
+}, {
+  "playtime": 1643275315,
+  "artist": "Boys Noize feat. Kelsey Lu",
+  "title": "Love & Validation (Edit)",
+  "hash": "67f09c279395677caeda909128d379bd48c2c3e4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643275532,
+  "artist": "LCD Soundsystem",
+  "title": "Call The Police",
+  "hash": "05b1ccee3119ca33a15ec168e59206c7f5d8ae6e",
+  "spotifyId": ""
+}, {
+  "playtime": 1643275979,
+  "artist": "Adele",
+  "title": "Can I Get It",
+  "hash": "549c5dcd610ab875da89d06ecda1ec99f60f8df5",
+  "spotifyId": ""
+}, {
+  "playtime": 1643276185,
+  "artist": "Future Islands",
+  "title": "Konzerthinweis_Future Islands - Ran 01.03.2022 Columbiahalle",
+  "hash": "f8f666c501df6773697112e1c5d35e47e37a6f2f",
+  "spotifyId": ""
+}, {
+  "playtime": 1643276378,
+  "artist": "Snail Mail",
+  "title": "Glory",
+  "hash": "5341f69f5c23e533d47d034d26cac2aeae5821b4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643276772,
+  "artist": "The Police",
+  "title": "Message In A Bottle",
+  "hash": "c1e08e75275aafde0e451add163e1a16c8ce4fae",
+  "spotifyId": ""
+}, {
+  "playtime": 1643277034,
+  "artist": "Get Well Soon",
+  "title": "Mantra (Edit)",
+  "hash": "af3325034abba2704d73633922a87afa25795f0a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643277395,
+  "artist": "Alicia Keys",
+  "title": "Best Of Me",
+  "hash": "5dde756255cefc19e7838d102c89f0270406b2be",
+  "spotifyId": ""
+}, {
+  "playtime": 1643277870,
+  "artist": "Klaxons",
+  "title": "Golden Skans",
+  "hash": "094bfffaf984bb824300f8088b63666a12e56439",
+  "spotifyId": ""
+}, {
+  "playtime": 1643278032,
+  "artist": "The Black Keys",
+  "title": "Lo/Hi",
+  "hash": "c8536411bdb80cef283ba9e37f3766cb7e698c17",
+  "spotifyId": ""
+}, {
+  "playtime": 1643278499,
+  "artist": "Lenny Kravitz",
+  "title": "Mr. Cab Driver",
+  "hash": "2ca70a7da2cbc7c2d0534a5f503ee7cbf700ce79",
+  "spotifyId": ""
+}, {
+  "playtime": 1643278783,
+  "artist": "Common (feat. PJ)",
+  "title": "Imagine",
+  "hash": "d2d3dfc9894f0f2a659007bcd6f8056bfe2ca236",
+  "spotifyId": ""
+}, {
+  "playtime": 1643278975,
+  "artist": "Archive",
+  "title": "Fear there & everywhere",
+  "hash": "0b6feb6d6078714c65f9a4af26c571072eaaa21b",
+  "spotifyId": ""
+}, {
+  "playtime": 1643279184,
+  "artist": "IDLES",
+  "title": "When The Lights Come On",
+  "hash": "b1cb85aeae40afba439c70e362c07844bfa088f9",
+  "spotifyId": ""
+}, {
+  "playtime": 1643279576,
+  "artist": "Nation Of Language",
+  "title": "Whatever You Want",
+  "hash": "dffc47dc13d011903226d33d62574c1a27578228",
+  "spotifyId": ""
+}, {
+  "playtime": 1643279859,
+  "artist": "Feist",
+  "title": "How Come You Never Go There",
+  "hash": "a85b65eaed40f84198f6bb6594158f7fe1d8b3e1",
+  "spotifyId": ""
+}, {
+  "playtime": 1643280216,
+  "artist": "Arcade Fire",
+  "title": "Intervention",
+  "hash": "74617c229612987ff9d59111ccd63a6d6c9c1265",
+  "spotifyId": ""
+}, {
+  "playtime": 1643280466,
+  "artist": "WhoMadeWho",
+  "title": "Silence & Secrets (Radio Edit)",
+  "hash": "47e34749a5d2f54362a5c80457701a2bbfcc0e81",
+  "spotifyId": ""
+}, {
+  "playtime": 1643280651,
+  "artist": "The Haunted Youth",
+  "title": "Teen Rebel (Edit)",
+  "hash": "306eeaadce16e8416579d4c19b968b4510c086ba",
+  "spotifyId": ""
+}, {
+  "playtime": 1643280947,
+  "artist": "The B-52's",
+  "title": "Love shack",
+  "hash": "4b7b7520dacfe1e274252482eb1a224814678833",
+  "spotifyId": ""
+}, {
+  "playtime": 1643281455,
+  "artist": "Faithless",
+  "title": "Muhammad Ali",
+  "hash": "736e7e36e370af32a7218a2e660e26b809a0479d",
+  "spotifyId": ""
+}, {
+  "playtime": 1643281664,
+  "artist": "Chapel Club",
+  "title": "Surfacing",
+  "hash": "d1edb86e2fc0e28a260e25b58e8bae31c4b1f384",
+  "spotifyId": ""
+}, {
+  "playtime": 1643281915,
+  "artist": "Jack White",
+  "title": "Love Is Selfish",
+  "hash": "e7e883bf9eb42a20489327b3bd1228681a710429",
+  "spotifyId": ""
+}, {
+  "playtime": 1643282067,
+  "artist": "Nneka",
+  "title": "This Life",
+  "hash": "aaf6b87361d21167663ce808166e41e6c349651b",
+  "spotifyId": ""
+}, {
+  "playtime": 1643282281,
+  "artist": "PawPaw Rod",
+  "title": "Glass House",
+  "hash": "bdb24831a3260590b4cc833d2de0c8d9df5c5c0d",
+  "spotifyId": ""
+}, {
+  "playtime": 1643282683,
+  "artist": "Yeasayer",
+  "title": "Silly Me",
+  "hash": "42ced8cbe4bfcf19b47bf7786fdc15db2444159c",
+  "spotifyId": ""
+}, {
+  "playtime": 1643283057,
+  "artist": "Elderbrook & Bob Moses",
+  "title": "Inner light",
+  "hash": "31fb10007ba692b83c9824aa5923abb6bf9cb89c",
+  "spotifyId": ""
+}, {
+  "playtime": 1643283309,
+  "artist": "Kings Of Leon",
+  "title": "Supersoaker",
+  "hash": "931c51b0c295dc77ad713ed230452e6f248365f9",
+  "spotifyId": ""
+}, {
+  "playtime": 1643283739,
+  "artist": "Portishead",
+  "title": "numb",
+  "hash": "58752657c8127fa7c6a6a9b33e181ea2d244c341",
+  "spotifyId": ""
+}, {
+  "playtime": 1643283968,
+  "artist": "Shifting Sands",
+  "title": "Unrelenting Surf",
+  "hash": "f1b08bf7ceb5d9a55725483f029c85e3d78896e6",
+  "spotifyId": ""
+}, {
+  "playtime": 1643284143,
+  "artist": "Can",
+  "title": "Spoon",
+  "hash": "a78e7bd4fce90903c3b9b18b438ea5c2216b19db",
+  "spotifyId": ""
+}, {
+  "playtime": 1643284496,
+  "artist": "Ten F\u00e9",
+  "title": "Candidate",
+  "hash": "399b13a69b0f0414d74057c01539055e3e336898",
+  "spotifyId": ""
+}, {
+  "playtime": 1643284723,
+  "artist": "Tame Impala",
+  "title": "Is It True",
+  "hash": "792f22c030dc865756ea7ec6e71dd7d37207692f",
+  "spotifyId": ""
+}, {
+  "playtime": 1643285128,
+  "artist": "Hobo Johnson",
+  "title": "Mover Awayer",
+  "hash": "b79660e4772d63fbe93ce3c45805e55f5d5afbd5",
+  "spotifyId": ""
+}, {
+  "playtime": 1643285678,
+  "artist": "Still Corners",
+  "title": "Heavy Days",
+  "hash": "6f1ce770c19acc98107119bbd2633ff0d4d124a4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643285893,
+  "artist": "Herbie Hancock",
+  "title": "Rockit",
+  "hash": "39998467d05208a6e518ea75e6e87011aa442e8c",
+  "spotifyId": ""
+}, {
+  "playtime": 1643286112,
+  "artist": "Boy Golden",
+  "title": "KD and lunch meat",
+  "hash": "bdf67181f8befbbb2c88d7a69913eb2752b549ea",
+  "spotifyId": ""
+}, {
+  "playtime": 1643286369,
+  "artist": "El Perro Del Mar",
+  "title": "God Knows (You Gotta Give To Get)",
+  "hash": "ee7d60462860cf4632db0edecc90e4c59cbd4e57",
+  "spotifyId": ""
+}, {
+  "playtime": 1643286674,
+  "artist": "Metronomy feat. Biig Piig",
+  "title": "405 (Radio Edit)",
+  "hash": "157d0f7330d1549bf678d71c5a8d8e21e1d9db36",
+  "spotifyId": ""
+}, {
+  "playtime": 1643286898,
+  "artist": "Travis",
+  "title": "Sing",
+  "hash": "49c99d4e2076de5a01cae1d698e0577959fdf49f",
+  "spotifyId": ""
+}, {
+  "playtime": 1643287377,
+  "artist": "The Smashing Pumpkins",
+  "title": "Silvery Sometimes (Ghosts)",
+  "hash": "862b4275fa3ab16a72e371dfa03598a5cf0d8e17",
+  "spotifyId": ""
+}, {
+  "playtime": 1643287579,
+  "artist": "Johnny Marr",
+  "title": "Lightning People",
+  "hash": "847b5db69596aa81e99f66349819cf235551b2ab",
+  "spotifyId": ""
+}, {
+  "playtime": 1643287848,
+  "artist": "The KLF",
+  "title": "Justified And Ancient",
+  "hash": "003b4e63ac49509d29b400a544e5f758845c1148",
+  "spotifyId": ""
+}, {
+  "playtime": 1643288238,
+  "artist": "Blood Red Shoes",
+  "title": "Sucker",
+  "hash": "c7f06e933f848f517bf62be944c8d1b71a7b4739",
+  "spotifyId": ""
+}, {
+  "playtime": 1643288767,
+  "artist": "Bloc Party",
+  "title": "So Here We Are",
+  "hash": "ed00082f0abdf85222b94446287aed3b465a4140",
+  "spotifyId": ""
+}, {
+  "playtime": 1643289256,
+  "artist": "ACRAZE feat. Cherish",
+  "title": "Do it to it",
+  "hash": "547ec49ee21721356d8c58c6b45be9b81a422f91",
+  "spotifyId": ""
+}, {
+  "playtime": 1643289413,
+  "artist": "Don McLean",
+  "title": "American Pie (Part 1)",
+  "hash": "7b714e51da960336a317e70d4cf0d79addecd1f6",
+  "spotifyId": ""
+}, {
+  "playtime": 1643289666,
+  "artist": "My Baby",
+  "title": "Gasoline",
+  "hash": "5d4c4868169351ea2c845b378c2deee3e9d927c1",
+  "spotifyId": ""
+}, {
+  "playtime": 1643289826,
+  "artist": "Editors",
+  "title": "An End Has A Start",
+  "hash": "d7b667899b96ec7ab75e424622746ebbf953aa02",
+  "spotifyId": ""
+}, {
+  "playtime": 1643290168,
+  "artist": "The Chemical Brothers",
+  "title": "Galvanize",
+  "hash": "a8ce4bea6fd894eaf5f40afcd2ff925dd71aa2f7",
+  "spotifyId": ""
+}, {
+  "playtime": 1643290358,
+  "artist": "Widowspeak",
+  "title": "Everything Is Simple",
+  "hash": "6ba452e383c6da5fe8663ff564ab6a09abcf6f3e",
+  "spotifyId": ""
+}, {
+  "playtime": 1643290574,
+  "artist": "TV On The Radio",
+  "title": "Dancing Choose",
+  "hash": "e8c9654d110fd8d67a28bf3439ff6b216ab2e7fb",
+  "spotifyId": ""
+}, {
+  "playtime": 1643290734,
+  "artist": "bbno$ feat. Rich Brian",
+  "title": "Edamame",
+  "hash": "f7698ce1f2b765ab7372fce2a31a8a710ed04288",
+  "spotifyId": ""
+}, {
+  "playtime": 1643291128,
+  "artist": "Babeheaven",
+  "title": "Human nature",
+  "hash": "3fb2b368cf19080a3ff5407015fbf69634be764b",
+  "spotifyId": ""
+}, {
+  "playtime": 1643291337,
+  "artist": "Portico Quartet",
+  "title": "Impressions",
+  "hash": "0ca27ccddc627fca7364d8c2b4ca7f3a8c5d2975",
+  "spotifyId": ""
+}, {
+  "playtime": 1643291555,
+  "artist": "Paul Kalkbrenner",
+  "title": "Graf Zahl (Edit)",
+  "hash": "61812859ed17e50747d53ef41889d30f8390a146",
+  "spotifyId": ""
+}, {
+  "playtime": 1643291878,
+  "artist": "R.E.M.",
+  "title": "What's The Frequency, Kenneth",
+  "hash": "8b90c08c630b2771f83315bebb5d9462087ae1b1",
+  "spotifyId": ""
+}, {
+  "playtime": 1643292312,
+  "artist": "Hilltop Hoods",
+  "title": "Leave Me Lonely",
+  "hash": "ff00dfadd7add512f09e3fceef5a35ccefbe7995",
+  "spotifyId": ""
+}, {
+  "playtime": 1643292567,
+  "artist": "Bilderbuch",
+  "title": "Zwischen deiner und meiner Welt",
+  "hash": "5a942120bb0ef8d38faf3837c9805fad48d6646e",
+  "spotifyId": ""
+}, {
+  "playtime": 1643292863,
+  "artist": "Someone feat. Tessa Rose Jackson",
+  "title": "Empathy",
+  "hash": "2a7258164a538c339d8f10f4b7b628c6678bf41a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643293387,
+  "artist": "Talking Heads",
+  "title": "Life During Wartime",
+  "hash": "f52473677b4432ad5200e050a1ccc9644f8be364",
+  "spotifyId": ""
+}, {
+  "playtime": 1643293507,
+  "artist": "Big Red Machine feat. Fleet Foxes & Ana\u00efs Mitchell",
+  "title": "Phoenix",
+  "hash": "7efcd92b64da688714d95a871f1d2a1f005cf3aa",
+  "spotifyId": ""
+}, {
+  "playtime": 1643294021,
+  "artist": "Mattiel",
+  "title": "Jeff Goldblum",
+  "hash": "c6e9b2ec0e0f3075bd2dd98afff45a34f1707c3a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643294808,
+  "artist": "Rilo Kiley",
+  "title": "Portions for foxes",
+  "hash": "2cfc552d56c51bc34f9334a1ec270d8c4b05661c",
+  "spotifyId": ""
+}, {
+  "playtime": 1643295211,
+  "artist": "Vanilla Ice",
+  "title": "Ice Ice Baby (Album Version)",
+  "hash": "928f704b2df0d01057642104b92b34665807039a",
+  "spotifyId": ""
+}, {
+  "playtime": 1643295940,
+  "artist": "Ian Dury & The Blockheads",
+  "title": "Wake Up And Make Love With Me",
+  "hash": "8b7fcecbbfcfb34ba3fe2a2b80997d65f6d06224",
+  "spotifyId": ""
+}, {
+  "playtime": 1643296199,
+  "artist": "Mogli",
+  "title": "Echo",
+  "hash": "5809c79ffcbc5595a95ae48bf299a303ef128de4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643296801,
+  "artist": "Banks",
+  "title": "Brain",
+  "hash": "74b3de90fb65eb406be60aa99c175840bff53a9b",
+  "spotifyId": ""
+}, {
+  "playtime": 1643297083,
+  "artist": "C\u00e4the",
+  "title": "Orgasmus",
+  "hash": "6b9a50bb3e2c5c98d9f4fe3e180fff24d23b2ccb",
+  "spotifyId": ""
+}, {
+  "playtime": 1643297704,
+  "artist": "Alt-J",
+  "title": "Hard drive gold",
+  "hash": "dc2aa1c694374163feef5f139b09326167d19953",
+  "spotifyId": ""
+}, {
+  "playtime": 1643298146,
+  "artist": "Tok Tok vs Soffy O",
+  "title": "Day Of Mine",
+  "hash": "1e97ba4a2bbb8ec7916c128597168697468b6a1c",
+  "spotifyId": ""
+}, {
+  "playtime": 1643298359,
+  "artist": "Dinosaur Jr.",
+  "title": "Garden",
+  "hash": "2898438d932072dce856c192eee43bd565680ab8",
+  "spotifyId": ""
+}, {
+  "playtime": 1643299052,
+  "artist": "School Of Zuversicht",
+  "title": "Hinter dem H\u00fcgel (Edit)",
+  "hash": "e8aa95a2f4c7cc5ba907bba3a8195d247201ea7e",
+  "spotifyId": ""
+}, {
+  "playtime": 1643299636,
+  "artist": "Muse",
+  "title": "Undisclosed Desires",
+  "hash": "52e40576a0379b1f653adc87bb46b6360ec80222",
+  "spotifyId": ""
+}, {
+  "playtime": 1643300158,
+  "artist": "A Certain Ratio",
+  "title": "Down and Dirty (Mr Dan Remix)",
+  "hash": "c357dd3294259649ca4cfe46d1b660e952f303bb",
+  "spotifyId": ""
+}, {
+  "playtime": 1643300740,
+  "artist": "Steve Miller Band",
+  "title": "Fly like an eagle",
+  "hash": "f718a424df1542079ffce3ab9c2224d5cd9de16b",
+  "spotifyId": ""
+}, {
+  "playtime": 1643301325,
+  "artist": "Black Cab",
+  "title": "Rotsler's Rules",
+  "hash": "a97c4f29c8b77c8e30d8b9860f4e99a505780ff2",
+  "spotifyId": ""
+}, {
+  "playtime": 1643301583,
+  "artist": "Nick Waterhouse",
+  "title": "Konzerthinweis_Nick Waterhouse - Katchi 30.05.2022 Metropol",
+  "hash": "d2a8bb79b2a7f556b3d70236c225261c20f02e7d",
+  "spotifyId": ""
+}, {
+  "playtime": 1643302042,
+  "artist": "Ladyhawke",
+  "title": "Walk Away",
+  "hash": "1bcdd414fa517fe4057aeee635ea4133fc88c41c",
+  "spotifyId": ""
+}, {
+  "playtime": 1643302207,
+  "artist": "Fazerdaze",
+  "title": "Little Uneasy",
+  "hash": "518d7cb8bc60cf6fbefbd8f95bcc7793600ed9be",
+  "spotifyId": ""
+}, {
+  "playtime": 1643302618,
+  "artist": "Dirty Nice",
+  "title": "Paint Your Nails Blue",
+  "hash": "04a017c4ad7ee21a3a83017db7d323d7040ca0a5",
+  "spotifyId": ""
+}, {
+  "playtime": 1643303204,
+  "artist": "Methyl Ethel",
+  "title": "Ruiner",
+  "hash": "c59d453177d3ce559133333427298d4455bd02a6",
+  "spotifyId": ""
+}, {
+  "playtime": 1643303452,
+  "artist": "Liz Lawrence",
+  "title": "Heart Of Gold",
+  "hash": "180535cceeb98ede720bf0d97c25657701dc9e1b",
+  "spotifyId": ""
+}, {
+  "playtime": 1643303748,
+  "artist": "Franz Ferdinand",
+  "title": "Take Me Out",
+  "hash": "ac317ea7df6ac027e6cfb1b883ecc618bb74e55f",
+  "spotifyId": ""
+}, {
+  "playtime": 1643304833,
+  "artist": "New Order",
+  "title": "Crystal",
+  "hash": "52b0bc842932f21b160e4ed2618ba8a7ff35ef59",
+  "spotifyId": ""
+}, {
+  "playtime": 1643305321,
+  "artist": "Mieke Miami",
+  "title": "Cry Baby Cry",
+  "hash": "84b685bb587bdee86bfb28ccf85df26b57d351a4",
+  "spotifyId": ""
+}, {
+  "playtime": 1643305499,
+  "artist": "Musa Dagh",
+  "title": "Plural Me",
+  "hash": "af8c7912e139c6d68b2565fac0de2703793aef56",
+  "spotifyId": ""
+}, {
+  "playtime": 1643305769,
+  "artist": "Coldplay",
+  "title": "Politik",
+  "hash": "95e96ba58b357178a134fd5ae561ccd7f1fa1975",
+  "spotifyId": ""
+}, {
+  "playtime": 1643306158,
+  "artist": "Benson, George",
+  "title": "On Broadway",
+  "hash": "704a0b746fee4c636319054b80862bc08bdeea6f",
+  "spotifyId": ""
+}, {
+  "playtime": 1643306777,
+  "artist": "RIVER",
+  "title": "Dance in the darkness",
+  "hash": "3c63e86bbfb588d276b493c4dd8c7fff693be30e",
+  "spotifyId": ""
+}, {
+  "playtime": 1643308162,
+  "artist": "Janelle Mon\u00e1e feat. Big Boi",
+  "title": "Tightrope",
+  "hash": "b053dbe4eafe77231a13de79c8d559256e2867df",
+  "spotifyId": ""
+}, {
+  "playtime": 1643308398,
+  "artist": "The Primitives",
+  "title": "Crash",
+  "hash": "a98c961736b9c2678c0538eeaec5bb0174132c0e",
+  "spotifyId": ""
+}, {
+  "playtime": 1643309134,
+  "artist": "Oliver Koletzki feat. Felix Raphael",
+  "title": "Synesthesia",
+  "hash": "5436c808012434ee78bebe4323c0c62b222069d0",
+  "spotifyId": ""
+}, {
+  "playtime": 1643309403,
+  "artist": "Tocotronic",
+  "title": "Wir sind hier nicht in Seattle, Dirk",
+  "hash": "277341305e7a443e652c40ae4b0de92120db0d39",
+  "spotifyId": ""
+}, {
+  "playtime": 1643309740,
+  "artist": "Pulp",
+  "title": "The Trees",
+  "hash": "33fa77e4d3ea92aed5b9e06227a5a613bb65ba2c",
+  "spotifyId": ""
+}, {
+  "playtime": 1643310237,
+  "artist": "HVOB",
+  "title": "Capture Casa (Edit)",
+  "hash": "7e56afc247b3d3f6cb2dbbcbe078e7e38e30bd74",
+  "spotifyId": ""
+}, {
+  "playtime": 1643313340,
+  "artist": "Yeah Yeah Yeahs",
+  "title": "Down Boy",
+  "hash": "65ba41e2133121ff35cd426e2f90e6199a8d85ce",
+  "spotifyId": ""
+}]

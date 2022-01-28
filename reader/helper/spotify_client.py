@@ -3,8 +3,8 @@ import os
 import spotipy
 from spotipy import MemoryCacheHandler, SpotifyOAuth
 
-from utils.secret_utils import get_secret
-from utils.utils import isDevStage
+from helper.secret_utils import get_secret
+from helper.utils import isDevStage
 
 spotify_refresh_token = get_secret("spotifyRefreshToken")
 spotify_access_token = get_secret("spotifyAccessToken")

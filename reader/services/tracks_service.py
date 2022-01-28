@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 from json import JSONDecodeError
@@ -6,11 +7,10 @@ import boto3
 import requests
 
 from models.track import Track
+from helper.bucket_client import store, load
 
 dynamodb = boto3.resource('dynamodb')
 sqs = boto3.client('sqs')
-
-tracks_table = dynamodb.Table(os.environ["TRACKS_TABLE_NAME"])
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -44,12 +44,23 @@ def get_tracks(url):
         raise e
 
 
+def store_pulled_tracks(tracks, name='pulled_tracks.json'):
+    json_string = json.dumps(tracks, default=lambda x: x.__dict__)
+    store(json_string, name)
+
+
+def filter_for_new_tracks(new_tracks, old_tracks):
+    unique_new_tracks = set(new_tracks) - set(old_tracks)
+    return unique_new_tracks
+
+
 def publish_new_tracks(tracks):
     for track in tracks:
         sqs.send_message(QueueUrl=os.environ['QUEUE_URL'], MessageBody=track.toJson(), MessageGroupId="NewTrack")
 
 
 def create(track: Track):
+    tracks_table = dynamodb.Table(os.environ["TRACKS_TABLE_NAME"])
     response = tracks_table.put_item(
         Item={
             "id": track.hash,
@@ -64,6 +75,7 @@ def create(track: Track):
 
 
 def update_playtime_for_track(hash, playtime):
+    tracks_table = dynamodb.Table(os.environ["TRACKS_TABLE_NAME"])
     response = tracks_table.update_item(
         Key={
             'id': hash
@@ -79,6 +91,7 @@ def update_playtime_for_track(hash, playtime):
 
 
 def update_spotifyid_for_track(hash, spotify_id):
+    tracks_table = dynamodb.Table(os.environ["TRACKS_TABLE_NAME"])
     response = tracks_table.update_item(
         Key={
             'id': hash
@@ -94,6 +107,7 @@ def update_spotifyid_for_track(hash, spotify_id):
 
 
 def search(track):
+    tracks_table = dynamodb.Table(os.environ["TRACKS_TABLE_NAME"])
     response = tracks_table.get_item(
         Key={
             'id': track.hash

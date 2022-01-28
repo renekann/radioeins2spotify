@@ -2,8 +2,8 @@ import json
 import logging
 import os
 
-from utils.secret_utils import update_secret
-from utils.spotify_client import spotify, spotify_refresh_token
+from helper.secret_utils import update_secret
+from helper.spotify_client import spotify, spotify_refresh_token
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)

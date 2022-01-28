@@ -1,6 +1,6 @@
 import json
 from hashlib import sha1
-from utils.utils import remove_words_from_string
+from helper.utils import remove_words_from_string
 
 class Track:
     newTrack = False
@@ -30,6 +30,12 @@ class Track:
                            "spotifyId": self.spotifyId})
     def __repr__(self):
         return f"Artist: {self.artist} - {self.title} (playtime: {self.playtime}, spotifyId: {self.spotifyId}, hash: {self.hash})"
+
+    def __hash__(self):
+        return hash(self.hash)
+
+    def __eq__(self, other):
+        return self.__class__ == other.__class__ and self.hash == other.hash
 
     def searchString(self):
         cleanupWords = [" x ",

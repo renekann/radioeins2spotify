@@ -2,7 +2,9 @@ import json
 import logging
 import datetime
 
-from services.tracks_service import get_tracks, publish_new_tracks
+from models.track import Track
+from services.tracks_service import get_tracks, publish_new_tracks, store_pulled_tracks, filter_for_new_tracks
+from helper.bucket_client import load
 
 url_today = 'http://rbb-radio1.konsole-labs.com/backend/get/?typ=playlist&subtyp=&ver=1525362457d&av=2.2.3'
 url_day_before = 'http://rbb-radio1.konsole-labs.com/backend/get/get-playlist-day.php?dayback=1'
@@ -18,14 +20,17 @@ def handler(event, context):
 
         tracks.sort(key=lambda x: x.playtime, reverse=False)
 
-        publish_new_tracks(tracks)
-        logger.info(f"Published recent tracks: {len(tracks)}")
+        old_tracks = [Track(**d) for d in load('pulled_tracks.json')]
+        unique_new_tracks = filter_for_new_tracks(tracks, old_tracks)
+        store_pulled_tracks(tracks, name='pulled_tracks.json')
+
+        publish_new_tracks(unique_new_tracks)
+        logger.info(f"Published new unique tracks: {len(unique_new_tracks)}")
 
         return {
             "statusCode": 200,
             "body": json.dumps({
-                "message": "hello world",
-                # "location": ip.text.replace("\n", "")
+                "message": "hello world"
             }),
         }
     except Exception as e:
@@ -34,8 +39,7 @@ def handler(event, context):
         return {
             "statusCode": 402,
             "body": json.dumps({
-                "error": e,
-                # "location": ip.text.replace("\n", "")
+                "error": e
             }),
         }
 
@@ -48,14 +52,17 @@ def handlerOlderTracks(event, context):
 
         tracks.sort(key=lambda x: x.playtime, reverse=False)
 
-        publish_new_tracks(tracks)
-        logger.info(f"Pulled and published older tracks: {len(tracks)}")
+        old_tracks = [Track(**d) for d in load('older_pulled_tracks.json')]
+        unique_new_tracks = filter_for_new_tracks(tracks, old_tracks)
+        store_pulled_tracks(tracks, name='older_pulled_tracks.json')
+
+        publish_new_tracks(unique_new_tracks)
+        logger.info(f"Published new unique older tracks: {len(unique_new_tracks)}")
 
         return {
             "statusCode": 200,
             "body": json.dumps({
-                "message": "hello world",
-                # "location": ip.text.replace("\n", "")
+                "message": "hello world"
             }),
         }
     except Exception as e:
