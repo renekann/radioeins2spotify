@@ -25,10 +25,10 @@ def add(track: Track, playlist_id):
 
 
 def in_playlist(track, playlist_id):
+    entry_id = sha1(str(f"{track.hash}-{playlist_id}").encode('utf-8')).hexdigest()
     response = playlists_tracks_table.get_item(
         Key={
-            'track_hash': track.hash,
-            'playlist_id': playlist_id
+            "id": entry_id,
         }
     )
 
