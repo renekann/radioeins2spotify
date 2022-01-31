@@ -46,7 +46,7 @@ def handle_track(track, receipt_handle):
 
     already_in_playlist = in_playlist(track=track, playlist_id=current_playlist_id)
 
-    if already_in_playlist is not None:
+    if already_in_playlist is False:
         logger.info(f"[ADDED] Add {track} to {current_playlist_id}")
         add_track_to_playlist(track=track, playlist_id=current_playlist_id)
     else:
