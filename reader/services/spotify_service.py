@@ -4,9 +4,11 @@ import logging
 import boto3
 import os
 
+from env import TRACKS_TABLE_NAME, PLAYLIST_TABLE_NAME, QUEUE_URL, MAX_NUMBER_TRACKS_IN_PLAYLIST
 from services.playlist_service import get_current_playlist, create_playlist, delete_current_playlist
 from helper.slack import send_slack_message
 from helper.spotify_client import spotify, spotify_playlist_name_prefix
+from services.playlist_tracks_service import in_playlist, add
 from services.tracks_service import update_spotifyid_for_track, search, create, update_playtime_for_track
 
 logger = logging.getLogger()
@@ -15,8 +17,8 @@ logger.setLevel(logging.INFO)
 sqs = boto3.client('sqs')
 
 dynamodb = boto3.resource('dynamodb')
-tracks_table = dynamodb.Table(os.environ["TRACKS_TABLE_NAME"])
-playlists_table = dynamodb.Table(os.environ["PLAYLIST_TABLE_NAME"])
+tracks_table = dynamodb.Table(TRACKS_TABLE_NAME)
+playlists_table = dynamodb.Table(PLAYLIST_TABLE_NAME)
 
 
 def handle_track(track, receipt_handle):
@@ -24,7 +26,7 @@ def handle_track(track, receipt_handle):
 
     if not is_new:
         logger.info(f"[NOT_NEW] Remove {track}, because track is already handled")
-        sqs.delete_message(QueueUrl=os.environ['QUEUE_URL'], ReceiptHandle=receipt_handle)
+        sqs.delete_message(QueueUrl=QUEUE_URL, ReceiptHandle=receipt_handle)
         return
 
     if track.spotifyId == "":
@@ -33,7 +35,7 @@ def handle_track(track, receipt_handle):
         if updated_track is None:
             # TODO: requeue with flag to search with other query
             logger.info(f"[NO_SPOTIFY_ID] Remove {track}, because no spotifyId could be fetched")
-            sqs.delete_message(QueueUrl=os.environ['QUEUE_URL'], ReceiptHandle=receipt_handle)
+            sqs.delete_message(QueueUrl=QUEUE_URL, ReceiptHandle=receipt_handle)
             return
         else:
             track = updated_track
@@ -42,15 +44,15 @@ def handle_track(track, receipt_handle):
     current_playlist_id = get_or_create_current_playlist()
     logger.info(f"PlaylistId: {current_playlist_id}")
 
-    playlist_tracks = get_playlist_tracks(current_playlist_id)
+    already_in_playlist = in_playlist(track=track, playlist_id=current_playlist_id)
 
-    if not already_in_playlist(track, playlist_tracks):
+    if already_in_playlist is not None:
         logger.info(f"[ADDED] Add {track} to {current_playlist_id}")
         add_track_to_playlist(track=track, playlist_id=current_playlist_id)
     else:
         logger.info(f"[NOT_ADDED] {track} already in {current_playlist_id}")
 
-    sqs.delete_message(QueueUrl=os.environ['QUEUE_URL'], ReceiptHandle=receipt_handle)
+    sqs.delete_message(QueueUrl=QUEUE_URL, ReceiptHandle=receipt_handle)
 
 
 def is_new_track(track):
@@ -118,7 +120,7 @@ def get_or_create_current_playlist():
         if result is not None and result.get('tracks') is not None:
             number_of_tracks = result.get('tracks').get('total')
 
-        if number_of_tracks >= int(os.environ['MAX_NUMBER_TRACKS_IN_PLAYLIST']):
+        if number_of_tracks >= int(MAX_NUMBER_TRACKS_IN_PLAYLIST):
             logger.info(f"Max number of tracks in playlist {current_playlist_id} reached - create new.")
             result = None
 
@@ -155,15 +157,20 @@ def get_playlist_tracks(playlist_id, start=0, limit=50, stop_at=-1):
     return playlist_tracks
 
 
-def already_in_playlist(track, playlist_tracks):
-    filtered_tracks = list(filter(lambda x: ("track" in x and x['track']["id"] == track.spotifyId), playlist_tracks))
-    return len(filtered_tracks) > 0
+# def already_in_playlist(track, playlist_tracks):
+#     filtered_tracks = list(filter(lambda x: ("track" in x and x['track']["id"] == track.spotifyId), playlist_tracks))
+#     return len(filtered_tracks) > 0
 
 
 def add_track_to_playlist(track, playlist_id):
     result = spotify.playlist_add_items(playlist_id=playlist_id, items=[track.spotifyId])
-    send_slack_message(f"{track} added to {playlist_id}", channel="radio2spotify-app-prod-log")
-    logger.debug(result)
+
+    if result["snapshot_id"] is not None:
+        add(track=track, playlist_id=playlist_id)
+        send_slack_message(f"{track} added to {playlist_id}", channel="radio2spotify-app-prod-log")
+        logger.info(f"[TRACK ADDED TO PLAYLIST] {track} added to {playlist_id} ({result})")
+    else:
+        logger.error(f"[TRACK NOT ADDED] {track} not added to {playlist_id} ({result})")
 
 
 class Error(Exception):

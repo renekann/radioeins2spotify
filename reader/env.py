@@ -3,3 +3,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 STAGE = os.environ.get('STAGE')
+TRACKS_TABLE_NAME = os.environ["TRACKS_TABLE_NAME"]
+PLAYLIST_TABLE_NAME = os.environ["PLAYLIST_TABLE_NAME"]
+QUEUE_URL = os.environ["QUEUE_URL"]
+SLACK_CHANNEL = os.environ['SLACK_CHANNEL']
+BUCKET_NAME = os.environ["BUCKET_NAME"]
+PLAYLIST_PREFIX = os.environ["PLAYLIST_PREFIX"]
+PLAYLIST_TRACKS_TABLE_NAME = os.environ["PLAYLIST_TRACKS_TABLE_NAME"]
+MAX_NUMBER_TRACKS_IN_PLAYLIST = os.environ["MAX_NUMBER_TRACKS_IN_PLAYLIST"]

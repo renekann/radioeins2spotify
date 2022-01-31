@@ -3,6 +3,7 @@ import os
 import spotipy
 from spotipy import MemoryCacheHandler, SpotifyOAuth
 
+from env import PLAYLIST_PREFIX, STAGE
 from helper.secret_utils import get_secret
 from helper.utils import isDevStage
 
@@ -22,12 +23,12 @@ spotify_scopes = [
 ]
 
 if os.environ.get('PLAYLIST_PREFIX') is not None:
-    spotify_playlist_name_prefix = os.environ['PLAYLIST_PREFIX']
+    spotify_playlist_name_prefix = PLAYLIST_PREFIX
 else:
     spotify_playlist_name_prefix = "Test playlist"
 
 if isDevStage():
-    spotify_playlist_name_prefix = f"[{os.environ['STAGE']}] {spotify_playlist_name_prefix}"
+    spotify_playlist_name_prefix = f"[{STAGE}] {spotify_playlist_name_prefix}"
 
 memory_cache_handler = MemoryCacheHandler()
 memory_cache_handler.save_token_to_cache(

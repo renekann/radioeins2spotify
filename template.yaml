@@ -24,6 +24,7 @@ Globals:
       Variables:
         TRACKS_TABLE_NAME: !Sub "${Stage}-tracks"
         PLAYLIST_TABLE_NAME: !Sub "${Stage}-playlists"
+        PLAYLIST_TRACKS_TABLE_NAME: !Sub "${Stage}-playlist-tracks"
         QUEUE_URL: !Ref MySqsQueue
         MAX_NUMBER_TRACKS_IN_PLAYLIST: 10000
         PLAYLIST_PREFIX: !Sub "${PlaylistDebugPrefix}radioeins.de (unofficial) - live playlist!"

@@ -1,8 +1,10 @@
 import os
 import boto3
 
+from env import PLAYLIST_TABLE_NAME
+
 dynamodb = boto3.resource('dynamodb')
-playlists_table = dynamodb.Table(os.environ["PLAYLIST_TABLE_NAME"])
+playlists_table = dynamodb.Table(PLAYLIST_TABLE_NAME)
 
 
 def get_current_playlist():

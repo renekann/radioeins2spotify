@@ -1,6 +1,5 @@
 import json
 import logging
-import datetime
 
 from models.track import Track
 from services.tracks_service import get_tracks, publish_new_tracks, store_pulled_tracks, filter_for_new_tracks

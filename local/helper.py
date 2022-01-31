@@ -2,8 +2,7 @@ import boto3
 import spotipy
 from spotipy import SpotifyOAuth
 
-from utils.spotify_client import spotify_scopes
-
+from helper.spotify_client import spotify_scopes
 
 def create_devices_table(dynamodb=None):
     dynamodb = boto3.resource('dynamodb', endpoint_url="http://localhost:8000")

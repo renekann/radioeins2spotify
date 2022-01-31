@@ -1,6 +1,8 @@
 import os
 import re
 
+from env import STAGE
+
 
 def remove_words_from_string(value, stopwords, replace=""):
     replaced_value = value
@@ -13,7 +15,7 @@ def remove_words_from_string(value, stopwords, replace=""):
 
 
 def isDevStage():
-    if os.environ.get('STAGE'):
-        return os.environ['STAGE'] == 'dev'
+    if STAGE:
+        return STAGE == 'dev'
     else:
         return False
