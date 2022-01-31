@@ -6,7 +6,7 @@ from json import JSONDecodeError
 import boto3
 import requests
 
-from env import TRACKS_TABLE_NAME
+from env import TRACKS_TABLE_NAME, QUEUE_URL
 from models.track import Track
 from helper.bucket_client import store, load
 
