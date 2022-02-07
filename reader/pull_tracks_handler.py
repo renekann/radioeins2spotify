@@ -21,10 +21,13 @@ def handler(event, context):
 
         old_tracks = [Track(**d) for d in json.loads(load('pulled_tracks.json'))]
         unique_new_tracks = filter_for_new_tracks(tracks, old_tracks)
-        store_pulled_tracks(tracks, name='pulled_tracks.json')
 
-        publish_new_tracks(unique_new_tracks)
-        logger.info(f"Published new unique tracks: {len(unique_new_tracks)}")
+        if len(unique_new_tracks) > 0:
+            store_pulled_tracks(tracks, name='pulled_tracks.json')
+            publish_new_tracks(unique_new_tracks)
+            logger.info(f"Published new unique tracks: {len(unique_new_tracks)}")
+        else:
+            logger.info(f"Published no new unique tracks.")
 
         return {
             "statusCode": 200,
@@ -53,10 +56,13 @@ def handlerOlderTracks(event, context):
 
         old_tracks = [Track(**d) for d in json.loads(load('older_pulled_tracks.json'))]
         unique_new_tracks = filter_for_new_tracks(tracks, old_tracks)
-        store_pulled_tracks(tracks, name='older_pulled_tracks.json')
 
-        publish_new_tracks(unique_new_tracks)
-        logger.info(f"Published new unique older tracks: {len(unique_new_tracks)}")
+        if len(unique_new_tracks) > 0:
+            store_pulled_tracks(tracks, name='older_pulled_tracks.json')
+            publish_new_tracks(unique_new_tracks)
+            logger.info(f"Published new unique older tracks: {len(unique_new_tracks)}")
+        else:
+            logger.info(f"Published no older unique tracks.")
 
         return {
             "statusCode": 200,
