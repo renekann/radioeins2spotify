@@ -4,7 +4,8 @@ import unittest
 from unittest import TestCase, mock
 
 from models.track import Track
-from services.tracks_service import filter_for_new_tracks
+from services.tracks_service import filter_for_new_tracks, parse_tracks
+
 
 @mock.patch.dict(os.environ, {"BUCKET_NAME": "bucket"})
 class TestTrack(TestCase):
@@ -38,6 +39,9 @@ class TestTrack(TestCase):
 
         self.assertIs(len(set_difference), 2)
 
+    def test_pull_track(self):
+        pulled_tracks_json = self.load_json_file('radioeins_pulled_tracks.json')
+        tracks = parse_tracks()
 
 
 if __name__ == '__main__':

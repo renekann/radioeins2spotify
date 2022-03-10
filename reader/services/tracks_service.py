@@ -31,9 +31,7 @@ def get_tracks(url):
             logger.error(f"Could not decode from url {url}, response was not json?")
             return []
 
-        filtered_tracks = list(filter(lambda x: (("k3" in x and x['k3'] == "S") or ("k3" not in x)), tracks["data"]))
-        mapped_tracks = list(map(lambda x: Track(playtime=x["s"], artist=x["k1"], title=x["k2"]), filtered_tracks))
-        return mapped_tracks
+        return parse_tracks(tracks["data"])
 
     except JSONDecodeError as e:
         logger.warning(
@@ -43,6 +41,12 @@ def get_tracks(url):
         logger.error(
             f"Could not fetch from url {url}, response status was {response.status_code}, body response {response.content})")
         raise e
+
+
+def parse_tracks(tracks_data):
+    filtered_tracks = list(filter(lambda x: (("k3" in x and x['k3'] == "S") or ("k3" not in x)), tracks_data))
+    mapped_tracks = list(map(lambda x: Track(playtime=x["s"], artist=x["k1"], title=x["k2"]), filtered_tracks))
+    return mapped_tracks
 
 
 def store_pulled_tracks(tracks, name='pulled_tracks.json'):
