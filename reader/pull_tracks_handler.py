@@ -4,10 +4,11 @@ import logging
 from models.track import Track
 from services.tracks_service import get_tracks, publish_new_tracks, store_pulled_tracks, filter_for_new_tracks
 from helper.bucket_client import load
+from helper.utils import generate_radioeins_url
 
-url_today = 'http://rbb-radio1.konsole-labs.com/backend/get/?typ=playlist&subtyp=&ver=1525362457d&av=2.2.3'
-url_day_before = 'http://rbb-radio1.konsole-labs.com/backend/get/get-playlist-day.php?dayback=1'
-url_two_days_before = 'http://rbb-radio1.konsole-labs.com/backend/get/get-playlist-day.php?dayback=2'
+url_today = generate_radioeins_url(days_to_subtract=0)
+url_day_before = generate_radioeins_url(days_to_subtract=1)
+url_two_days_before = generate_radioeins_url(days_to_subtract=2)
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)

@@ -41,8 +41,8 @@ class TestTrack(TestCase):
 
     def test_pull_track(self):
         pulled_tracks_json = self.load_json_file('radioeins_pulled_tracks.json')
-        tracks = parse_tracks()
-
+        tracks = parse_tracks(pulled_tracks_json)
+        self.assertIs(len(tracks), 11)
 
 if __name__ == '__main__':
     unittest.main()

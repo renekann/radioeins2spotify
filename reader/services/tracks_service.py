@@ -44,8 +44,8 @@ def get_tracks(url):
 
 
 def parse_tracks(tracks_data):
-    filtered_tracks = list(filter(lambda x: (("k3" in x and x['k3'] == "S") or ("k3" not in x)), tracks_data))
-    mapped_tracks = list(map(lambda x: Track(playtime=x["s"], artist=x["k1"], title=x["k2"]), filtered_tracks))
+    filtered_tracks = list(filter(lambda x: x['cl'] == "Music", tracks_data))
+    mapped_tracks = list(map(lambda x: Track(playtime=x["ts"], artist=x["a"], title=x["t"]), filtered_tracks))
     return mapped_tracks
 
 
