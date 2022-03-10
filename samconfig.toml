@@ -11,7 +11,7 @@ s3_prefix = "radio2spotify-dev"
 region = "eu-central-1"
 confirm_changeset = false
 capabilities = "CAPABILITY_IAM"
-parameter_overrides = "Stage=dev SlackChannel=radio2spotify-app-dev PlaylistDebugPrefix=DEV "
+parameter_overrides = "Stage=dev SlackChannel=radio2spotify-app-dev PlaylistDebugPrefix=DEV"
 image_repositories = []
 
 
