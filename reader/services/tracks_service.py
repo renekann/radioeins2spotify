@@ -19,6 +19,7 @@ logger.setLevel(logging.INFO)
 def get_tracks(url):
     try:
         response = requests.get(url)
+        logger.info(f"Pull from {url}")
 
         if response.status_code != 200:
             logger.error(f"Could not fetch from url {url}, response was {response.status_code}")

@@ -11,7 +11,7 @@ class Track:
                  artist,
                  title,
                  hash=None,
-                 spotify_id=None):
+                 spotifyId=None):
         self.playtime = playtime
         self.artist = artist
         self.title = title
@@ -21,10 +21,10 @@ class Track:
         else:
             self.hash = hash
 
-        if spotify_id is None:
+        if spotifyId is None:
             self.spotifyId = ""
         else:
-            self.spotifyId = spotify_id
+            self.spotifyId = spotifyId
 
     def toJson(self):
         return json.dumps({"artist": self.artist, "title": self.title, "playtime": self.playtime, "hash": self.hash,
