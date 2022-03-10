@@ -8,6 +8,7 @@ from models.track import Track
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+
 def handler(event, context):
     try:
         for record in event['Records']:

@@ -2,7 +2,6 @@ from datetime import datetime
 import logging
 
 import boto3
-import os
 
 from env import TRACKS_TABLE_NAME, PLAYLIST_TABLE_NAME, QUEUE_URL, MAX_NUMBER_TRACKS_IN_PLAYLIST
 from services.playlist_service import get_current_playlist, create_playlist, delete_current_playlist

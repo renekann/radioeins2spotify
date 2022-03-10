@@ -8,6 +8,7 @@ from helper.spotify_client import spotify, spotify_refresh_token
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+
 def handler(event, context):
     try:
         refresh_token()
@@ -29,9 +30,10 @@ def handler(event, context):
             }),
         }
 
+
 def refresh_token():
-    spotifyAuthManager = spotify.auth_manager
-    token_info = spotifyAuthManager.refresh_access_token(spotify_refresh_token)
+    spotify_auth_manager = spotify.auth_manager
+    token_info = spotify_auth_manager.refresh_access_token(spotify_refresh_token)
     update_secret("spotifyRefreshToken", token_info["refresh_token"])
     update_secret("spotifyAccessToken", token_info["access_token"])
     update_secret("spotifyTokenExpiresAt", token_info["expires_at"])

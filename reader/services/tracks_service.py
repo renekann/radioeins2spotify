@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 from json import JSONDecodeError
 
 import boto3
@@ -8,7 +7,7 @@ import requests
 
 from env import TRACKS_TABLE_NAME, QUEUE_URL
 from models.track import Track
-from helper.bucket_client import store, load
+from helper.bucket_client import store
 
 dynamodb = boto3.resource('dynamodb')
 sqs = boto3.client('sqs')
@@ -31,7 +30,7 @@ def get_tracks(url):
             logger.error(f"Could not decode from url {url}, response was not json?")
             return []
 
-        return parse_tracks(tracks["data"])
+        return parse_tracks(tracks)
 
     except JSONDecodeError as e:
         logger.warning(

@@ -13,6 +13,7 @@ url_two_days_before = generate_radioeins_url(days_to_subtract=2)
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+
 def handler(event, context):
     try:
         tracks = []

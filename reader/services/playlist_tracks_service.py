@@ -1,5 +1,4 @@
 import logging
-import os
 from hashlib import sha1
 
 import boto3
@@ -12,6 +11,7 @@ playlists_tracks_table = dynamodb.Table(PLAYLIST_TRACKS_TABLE_NAME)
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
+
 
 def add(track: Track, playlist_id):
     entry_id = sha1(str(f"{track.hash}-{playlist_id}").encode('utf-8')).hexdigest()

@@ -2,6 +2,7 @@ import json
 from hashlib import sha1
 from helper.utils import remove_words_from_string
 
+
 class Track:
     newTrack = False
 
@@ -9,8 +10,8 @@ class Track:
                  playtime,
                  artist,
                  title,
-                 hash = None,
-                 spotifyId = None):
+                 hash=None,
+                 spotify_id=None):
         self.playtime = playtime
         self.artist = artist
         self.title = title
@@ -20,14 +21,15 @@ class Track:
         else:
             self.hash = hash
 
-        if spotifyId is None:
+        if spotify_id is None:
             self.spotifyId = ""
         else:
-            self.spotifyId = spotifyId
+            self.spotifyId = spotify_id
 
     def toJson(self):
         return json.dumps({"artist": self.artist, "title": self.title, "playtime": self.playtime, "hash": self.hash,
                            "spotifyId": self.spotifyId})
+
     def __repr__(self):
         return f"Artist: {self.artist} - {self.title} (playtime: {self.playtime}, spotifyId: {self.spotifyId}, hash: {self.hash})"
 
@@ -38,7 +40,7 @@ class Track:
         return self.__class__ == other.__class__ and self.hash == other.hash
 
     def searchString(self):
-        cleanupWords = [" x ",
+        cleanup_words = [" x ",
                         "feat.",
                         "feat",
                         "Ft.",
@@ -62,7 +64,7 @@ class Track:
                         "Konzertmitschnitt",
                         "Popsplits"]
 
-        cleanedTitle = remove_words_from_string(self.title, cleanupWords).strip()
-        cleanedArtist = remove_words_from_string(self.artist, cleanupWords).strip()
+        cleaned_title = remove_words_from_string(self.title, cleanup_words).strip()
+        cleaned_artist = remove_words_from_string(self.artist, cleanup_words).strip()
 
-        return "track:" + cleanedTitle + " artist:" + cleanedArtist
+        return "track:" + cleaned_title + " artist:" + cleaned_artist

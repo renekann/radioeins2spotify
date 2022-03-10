@@ -1,4 +1,3 @@
-import os
 import boto3
 
 from env import PLAYLIST_TABLE_NAME
