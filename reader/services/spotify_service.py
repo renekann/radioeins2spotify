@@ -102,7 +102,7 @@ def get_or_create_current_playlist():
         playlist_name = f"{spotify_playlist_name_prefix} (since {date})"
 
         user_id = spotify.me()['id']
-        result = spotify.user_playlist_create(user=user_id, name=playlist_name)
+        result = spotify.user_playlist_create(user=user_id, name=playlist_name, collaborative=False, description='This is a live updated playlist of songs played at @radioeins. If a song can be not found, it will be skipped. No duplicates.')
 
         if result is not None:
             send_slack_message(f"New Playlist created: {result['external_urls']['spotify']}")
